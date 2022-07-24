@@ -1,10 +1,10 @@
 package lecturesHomework.E20;
 
 public class E1Sqare {
-    int sideA;
-    int sideB;
-    int sideC;
-    int sideD;
+    protected final int sideA;
+    protected final int sideB;
+    protected final int sideC;
+    protected final int sideD;
     //A    B
     //
     //
@@ -13,7 +13,7 @@ public class E1Sqare {
         this(a.getDistanceTo(b), a.getDistanceTo(c), d.getDistanceTo(c),d.getDistanceTo(b));
     }
 
-    public E1Sqare(int sideA, int sideB, int sideC, int sideD) {
+    private E1Sqare(int sideA, int sideB, int sideC, int sideD) {
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
